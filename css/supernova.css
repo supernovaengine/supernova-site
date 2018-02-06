@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(fonts/roboto.woff2) format("woff2"), url(fonts/roboto.woff) format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+	background: #FFF;
+	color: #333;
+	font: 16px/26px 'Roboto';
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, p, ol, ul, table {
+	margin: 20px 0
+}
+
+a { text-decoration: none }
+a:hover { text-decoration: underline }
+
+.wrapper { box-sizing: border-box; position: relative; max-width: 1000px; margin: 0 auto; overflow-y: hidden }
+
+.cabecalho { background: #283593; border-bottom: 10px solid #3f51b5 }
+
+.cabecalho-logo { box-sizing: border-box; display: block; padding: 0 20px; margin: 20px auto; max-width: 100% }
+
+.cabecalho-links { color: #FFF; position: absolute; right: 0; top: 50%; transform: translate(0, -50%) }
+.cabecalho-links > ul { list-style: none; padding: 0; margin: 0 }
+.cabecalho-links > ul > li { margin: 20px 0 }
+.cabecalho-links span { color: #FFF; display: block; text-align: center }
+.cabecalho-link-imagem { font-size: 30px }
+.cabecalho-link-texto { line-height: 30px }
+@media only screen and (max-width: 640px) {
+	.cabecalho .wrapper { padding-bottom: 60px }
+    .cabecalho-links { left: 50%; right: inherit; top: inherit; bottom: 5px; transform: translate(-50%, 0) }
+    .cabecalho-links > ul { white-space: nowrap }
+    .cabecalho-links > ul > li { display: inline-block; margin: 0; padding: 0 20px }
+}
+
+.corpo .wrapper { padding: 0 20px }
+.corpo-frase1 { font-size: 1.2em; text-align: center; font-weight: bold }
+
+#galeria { margin: 40px 0 }
+#galeria > ul { list-style:none; padding: 0; margin: -20px 0 0 -20px; text-align: center; font-size: 0 }
+#galeria > ul > li { display: inline-block; font-size: 16px; padding: 20px 0 0 20px; width: 320px; box-sizing: border-box }
+.galeria-imagem { background: #333; cursor: pointer; }
+.galeria-imagem img { display: block; width: 100% }
+
+.rodape { background: #222; border-top: 10px solid #444; color: #FFF; text-align: center; overflow-y: hidden; font-size: 0.9em }
+.rodape a { color: rgb(185, 181, 181)}

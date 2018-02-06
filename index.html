@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link  href="css/viewer.min.css" rel="stylesheet"/>
+		<script src="js/viewer.min.js"></script>
+
+		<link href="css/supernova.css" rel="stylesheet"/>
+		<link href="css/fontello.css" rel="stylesheet"/>
+		<link rel="shortcut icon" href="img/favicon.png"/>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113314204-2"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-113314204-2');
+		</script>
+
+		<title>Supernova</title>
+	</head>
+	<body>
+		<div class="cabecalho">
+			<div class="wrapper">
+				<img class="cabecalho-logo" src="img/logo.png"/>
+				<div class="cabecalho-links">
+					<ul>
+						<li>
+							<a href="http://docs.supernovaengine.org">
+								<span class="cabecalho-link-imagem icon-book"></span>
+								<span class="cabecalho-link-texto">Documentation</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/deslon/supernova">
+								<span class="cabecalho-link-imagem icon-github"></span>
+								<span class="cabecalho-link-texto">Source</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="corpo">
+			<div class="wrapper">
+				<p class="corpo-frase1">Game engine open source and cross-platform for 2D and 3D projects.</p>
+				<p><b>It`s free!</b> You can use Supernova in your commercial projects.</p>
+				<p>Made for <b>real programmers</b>! Take a control of your game code. 
+					<b>Lua and C++</b> can be used to make wonderful graphics and games.
+				    Write the code once and use it in <b>Android, iOS and HTML5</b>. It runs native in each platform with OpenGL ES.</p>
+				<div id="galeria">
+					<ul>
+						<li>
+							<div class="galeria-imagem"><img data-original="img/screen1.png" src="img/thumb_screen1.png" alt="Screen 1" /></div>
+						</li>
+						<li>
+							<div class="galeria-imagem"><img data-original="img/screen2.png" src="img/thumb_screen2.png" alt="Screen 2" /></div>
+						</li>
+						<li>
+							<div class="galeria-imagem"><img data-original="img/screen3.png" src="img/thumb_screen3.png" alt="Screen 3" /></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>
+			var image = document.getElementById('galeria');
+			var options = {url: 'data-original', navbar: false, toolbar: false};
+			var viewer = new Viewer(image, options);
+		</script>
+
+
+		<div class="rodape">
+			<p>Copyright © 2018, Deslon</p>
+			<p>
+			This is an open source project<br/>
+			Source code is licensed by <a href="https://mit-license.org/">MIT License</a><br/>
+			Images, logos, text and website are licensed by <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br/>
+			</p>
+		</div>
+	</body>
+</html>
