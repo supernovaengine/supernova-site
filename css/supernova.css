@@ -32,18 +32,12 @@ a:hover { text-decoration: underline }
 .cabecalho-links span { color: #FFF; display: block; text-align: center }
 .cabecalho-link-imagem { font-size: 30px }
 .cabecalho-link-texto { line-height: 30px }
-@media only screen and (max-width: 640px) {
-	.cabecalho .wrapper { padding-bottom: 60px }
-    .cabecalho-links { left: 50%; right: inherit; top: inherit; bottom: 5px; transform: translate(-50%, 0) }
-    .cabecalho-links > ul { white-space: nowrap }
-    .cabecalho-links > ul > li { display: inline-block; margin: 0; padding: 0 20px }
-}
 
 .corpo .wrapper { padding: 0 20px }
 .corpo-frase1 { font-size: 1.2em; text-align: center; font-weight: bold }
 
 .lista-2-colunas { margin: 40px 0 }
-.lista-2-colunas > ul { list-style: none; padding: 0; margin: -20px 0 0 -20px }
+.lista-2-colunas > ul { list-style: none; padding: 0; margin: -20px 0 0 -20px; overflow: hidden }
 .lista-2-colunas > ul:after { clear: both; content: ''; display: block }
 .lista-2-colunas > ul > li { float: left; padding: 20px 0 0 20px; box-sizing: border-box; width: 50% }
 .lista-2-colunas h3 { color: #283593; font-size: 1.0em; margin: 0 0 10px }
@@ -51,10 +45,18 @@ a:hover { text-decoration: underline }
 .lista-2-colunas p { margin: 10px 0 0 }
 
 .galeria { background: #DDD; margin: 40px 0 }
-.galeria > ul { list-style:none; padding: 0; margin: -20px 0 0 -20px; text-align: center; font-size: 0 }
+.galeria > ul { list-style:none; padding: 0; margin: -20px 0 0 -20px; text-align: center; font-size: 0; overflow: hidden }
 .galeria > ul > li { display: inline-block; font-size: 16px; padding: 20px 0 0 20px; width: 310px; box-sizing: border-box }
 .galeria-imagem { background: #333; cursor: pointer; }
 .galeria-imagem img { display: block; width: 100% }
 
 .rodape { background: #222; border-top: 10px solid #444; color: #FFF; text-align: center; overflow-y: hidden; font-size: 0.9em }
 .rodape a { color: rgb(185, 181, 181)}
+
+@media only screen and (max-width: 640px) {
+	.cabecalho .wrapper { padding-bottom: 60px }
+    .cabecalho-links { left: 50%; right: inherit; top: inherit; bottom: 5px; transform: translate(-50%, 0) }
+    .cabecalho-links > ul { white-space: nowrap }
+    .cabecalho-links > ul > li { display: inline-block; margin: 0; padding: 0 20px }
+    .lista-2-colunas > ul > li { width: 100% }
+}
