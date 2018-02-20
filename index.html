@@ -51,9 +51,38 @@
 				<p class="corpo-frase1">Game engine open source and cross-platform for 2D and 3D projects.</p>
 				<p><b>It`s free!</b> You can use Supernova in your commercial projects.</p>
 				<p>Made for <b>real programmers</b>! Take a control of your game code. 
-					<b>Lua and C++</b> can be used to make wonderful graphics and games.
+				<b>Lua and C++</b> can be used to make wonderful graphics and games.
 				    Write the code once and use it in <b>Android, iOS and HTML5</b>. It runs native in each platform with OpenGL ES.</p>
-				<div id="galeria">
+				<div class="lista-2-colunas">
+					<ul>
+						<li>
+							<h3 class="icon-book">Made for programmers</h3>
+							<p>Take a control of your game code. This is a game engine for real programmers.</p>
+						</li>
+						<li>
+							<h3 class="icon-book">Simple and Fast</h3>
+							<p>Supernova doesn't have unnecessary stuffs like heavy GUI and extra processing.</p>
+						</li>
+						<li>
+							<h3 class="icon-book">Lua or C++</h3>
+							<p>You choose the best language is good for you. Lua and C++ can be used to make wonderful graphics and games.</p>
+						</li>
+						<li>
+							<h3 class="icon-book">Cross-platform</h3>
+							<p>Write the code once and use it in Android, iOS and HTML5. It runs native in each platform with OpenGL ES.</p>
+						</li>
+						<li>
+							<h3 class="icon-book">Sprites and animations</h3>
+							<p>A sprite object makes everything easy when working with animations.</p>
+						</li>
+						<li>
+							<h3 class="icon-book">Dynamic shadows</h3>
+							<p>You can use many kind of lights with support for dynamic shadows.</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="galeria">
 					<ul>
 						<li>
 							<div class="galeria-imagem"><img data-original="img/screen1.png" src="img/thumb_screen1.png" alt="Screen 1" /></div>
@@ -69,7 +98,7 @@
 			</div>
 		</div>
 		<script>
-			var image = document.getElementById('galeria');
+			var image = document.querySelector('.galeria');
 			var options = {url: 'data-original', navbar: false, toolbar: false};
 			var viewer = new Viewer(image, options);
 		</script>
