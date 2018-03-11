@@ -1,3 +1,11 @@
 
 .icon-book:before { content: '\e800'; } /* '' */
+.icon-gauge:before { content: '\e801'; } /* '' */
+.icon-html5:before { content: '\e802'; } /* '' */
+.icon-picture:before { content: '\e803'; } /* '' */
+.icon-cog-alt:before { content: '\e804'; } /* '' */
+.icon-doc-text:before { content: '\f0f6'; } /* '' */
 .icon-github:before { content: '\f113'; } /* '' */
+.icon-keyboard:before { content: '\f11c'; } /* '' */
+.icon-apple:before { content: '\f179'; } /* '' */
+.icon-android:before { content: '\f17b'; } /* '' */
